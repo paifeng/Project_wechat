@@ -1,0 +1,5 @@
+{
+    "usingComponents": {  
+      "dialogedit": "/components/ui-dialog/index"  
+  }
+}

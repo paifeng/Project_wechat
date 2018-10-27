@@ -1,0 +1,33 @@
+<!-- index.wxml -->
+<view class="container">
+    <!-- 轮播 -->
+    <swiper class="f-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000"
+            bindchange="swiperChange">
+        <block wx:for="{{movies}}" wx:key="index">
+            <swiper-item>
+                <image src="{{item.url}}" class="slide-image" mode="aspectFill" bindtap="swiperclick"  />
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 宫格 -->
+    <view class="f-grids">
+        <view class="f-grid" wx:for="{{grids}}" wx:key="name">
+            <navigator url="{{item.url+'?name='+item.name+'&code='+item.code}}">
+                <view class='f-grid-bg'>
+                    <view class="f-grid-icon">
+                        <image src="{{item.icon}}" mode="scaleToFill"  />
+                    </view>
+                    <text class="f-grid-label">{{item.name}}</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <!-- tab页 -->
+    <view class="f-tab">
+        <van-tabs active="{{ active }}" bind:change="onTabChange">
+            <van-tab wx:for="{{ tabsTitle }}" wx:key="index" title="{{ item }}">
+                <view>{{'TAB' + item}}</view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

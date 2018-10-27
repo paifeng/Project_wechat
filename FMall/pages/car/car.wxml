@@ -1,0 +1,11 @@
+<van-card num="2" price="2.00" desc="新鲜的芒果，清爽可口，味甜" title="三亚芒果" thumb="{{ imageURL }}">
+  <view slot="footer">
+    <van-stepper value="{{ 0 }}" min="0" max="10" bind:change="onChange"  />
+  </view>
+</van-card>
+<van-submit-bar price="{{ 30500 }}" button-text="提交订单" bind:submit="onSubmit" tip="{{ true }}">
+  <view slot="tip">
+    您的收货地址不支持同城送,
+    <text class="van-edit-address" bindtap="onClickLink">修改地址</text>
+  </view>
+</van-submit-bar>

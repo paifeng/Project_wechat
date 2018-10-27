@@ -1,0 +1,4 @@
+/*底部提交bar*/
+.van-edit-address {
+  color: #38f;
+}

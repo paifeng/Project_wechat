@@ -1,0 +1,3 @@
+<view class='ui_dialog_container' hidden="{{!dialogShow}}">
+  <view class='ui_dialog_text'>{{dialogText}}</view>
+</view>

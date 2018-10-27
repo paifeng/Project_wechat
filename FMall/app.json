@@ -1,0 +1,49 @@
+{
+  "comment": "app.json文件用来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。",
+  "pages": [
+    "pages/index/index",
+    "pages/goods/goods",
+    "pages/car/car",
+    "pages/mine/mine",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "水果忍者",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8A8A8A",
+    "selectedColor": "#D81E06",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "images/icon_index_selected.png",
+        "iconPath": "images/icon_index.png",
+        "pagePath": "pages/index/index",
+        "text": "商城首页"
+      },
+      {
+        "selectedIconPath": "images/icon_goods_selected.png",
+        "iconPath": "images/icon_goods.png",
+        "pagePath": "pages/goods/goods",
+        "text": "全部商品"
+      },
+      {
+        "selectedIconPath": "images/icon_car_selected.png",
+        "iconPath": "images/icon_car.png",
+        "pagePath": "pages/car/car",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/icon_account_selected.png",
+        "iconPath": "images/icon_account.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

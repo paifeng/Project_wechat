@@ -1,0 +1,7 @@
+<!-- index.wxml -->
+<view class="container">
+    <view>
+        <dialogedit id="dialogedit">{{dialogText}}</dialogedit>
+        <button type="primary" bindtap="showDialog">showDialog!</button>
+    </view>
+</view>

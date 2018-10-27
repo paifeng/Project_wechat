@@ -1,0 +1,13 @@
+<view class="container">
+  <van-search class="search" value="{{ keyWord }}" placeholder="请输入搜索关键词" use-action-slot bind:search="onSearch"
+              bind:focus="onSearchFocus">
+    <view slot="action" bind:tap="onSearch">搜索</view>
+  </van-search>
+  <view class="catalog">
+    <scroll-view class="nav" scroll-y="true">
+      <view class="item {{ currentCategoryId == item.id ? 'active' : ''}}" wx:key="name" wx:for="{{navList}}"
+            data-id="{{item.id}}" data-index="{{index}}" bindtap="switchCate">{{item.name}}</view>
+    </scroll-view>
+    <scroll-view class="cate" scroll-y="true"></scroll-view>
+  </view>
+</view>

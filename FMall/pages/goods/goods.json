@@ -1,0 +1,6 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "van-search": "/dist/search/index"
+    }
+}

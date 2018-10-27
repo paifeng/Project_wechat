@@ -1,0 +1,12 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "van-card": "/dist/card/index",
+        "van-button": "/dist/button/index",
+        "van-submit-bar": "/dist/submit-bar/index",
+        "van-tag": "/dist/tag/index",
+        "van-checkbox-group": "/dist/checkbox-group/index",
+        "van-checkbox": "/dist/checkbox/index",
+        "van-stepper": "/dist/stepper/index"
+    }
+}
